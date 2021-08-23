@@ -188,8 +188,8 @@ function spawnEnemies() {
         let rand = Math.random();
         const velocity = {
             
-            x: Math.cos(angle) * rand * 4 ,
-            y: Math.sin(angle) * rand * 4
+            x: Math.cos(angle) * rand * 2 ,
+            y: Math.sin(angle) * rand * 2
         }
         enemies.push(new Enemy(x, y, radius, color, velocity));
     },1000)

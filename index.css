@@ -3,7 +3,12 @@
     padding: 0;
 }
 
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
 #card {
-    right: 45vw;
-    top: 10vh;
+    right: 40%;
+    top: 10%;
 }
