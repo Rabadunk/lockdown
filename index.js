@@ -185,9 +185,11 @@ function spawnEnemies() {
         
         // Getting velocity for enemy
         const angle = Math.atan2(centerY - y, centerX - x);
+        let rand = Math.random();
         const velocity = {
-            x: Math.cos(angle) + Math.random() * 3 ,
-            y: Math.sin(angle) + Math.random() * 3
+            
+            x: Math.cos(angle) * rand * 4 ,
+            y: Math.sin(angle) * rand * 4
         }
         enemies.push(new Enemy(x, y, radius, color, velocity));
     },1000)
